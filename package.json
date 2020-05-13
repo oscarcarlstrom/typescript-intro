@@ -1,0 +1,22 @@
+{
+  "name": "typescript-intro",
+  "version": "1.0.0",
+  "description": "Examples",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oscarcarlstrom/typescript-intro.git"
+  },
+  "keywords": [
+    "TypeScript"
+  ],
+  "author": "Oscar Carlström",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/oscarcarlstrom/typescript-intro/issues"
+  },
+  "homepage": "https://github.com/oscarcarlstrom/typescript-intro#readme"
+}
