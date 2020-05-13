@@ -1,12 +1,9 @@
 # Dependency directory
-# https://docs.npmjs.com/misc/faq#should-i-check-my-node-modules-folder-into-git
 node_modules
 
 # OS generated files #
-######################
 .DS_Store
 
 ### Code ###
-# Visual Studio Code - https://code.visualstudio.com/
 .settings/
 .vscode/
