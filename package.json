@@ -4,7 +4,6 @@
   "description": "Examples",
   "main": "index.js",
   "scripts": {
-    "test": "test",
     "build": "webpack --mode production",
     "start": "webpack-dev-server --open --mode development"
   },
