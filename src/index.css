@@ -1,0 +1,117 @@
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  width: 900px;
+  margin: auto;
+}
+
+h1 {
+  text-align: center;
+  font-size: 400%;
+  font-weight: 100;
+}
+
+#app {
+  display: flex;
+  justify-content: space-between;
+}
+
+#app > div {
+  width: 40%;
+  padding: 0px 15px 25px;
+}
+
+h2 {
+  display: flex;
+  align-items: baseline;
+  font-weight: inherit;
+}
+
+h2::before {
+  height: 2em;
+  width: 2em;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  margin-right: 10px;
+  font-weight: 600;
+  padding: 10px;
+}
+
+#js-todo > h2::before {
+  content: "JS";
+  background-color: #f0d920;
+}
+
+#js-todo button {
+  background-color: #f0d920;
+}
+
+#ts-todo > h2::before {
+  content: "TS";
+  background-color: #0377c7;
+  color: white;
+}
+
+#ts-todo button {
+  background-color: #0377c7;
+  color: white;
+}
+
+form {
+  display: flex;
+  align-items: center;
+}
+
+form button::after {
+  content: "\FF0B";
+  font-size: 300%;
+}
+
+input,
+button {
+  font-family: inherit;
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+input {
+  padding: 1rem;
+  font-size: 1rem;
+  margin-right: 10px;
+  border: solid 1px #689090;
+  border-radius: 4px;
+  flex-grow: 1;
+  font-weight: inherit;
+}
+
+button {
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  border-color: transparent;
+  cursor: pointer;
+  box-shadow: 0px 2px 11px 1px #7a7a7a;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  word-break: break-all;
+}
+
+li > button {
+  margin-right: 20px;
+  flex-shrink: 0;
+}
+
+li button::after {
+  content: "\2713";
+  font-size: 200%;
+}
