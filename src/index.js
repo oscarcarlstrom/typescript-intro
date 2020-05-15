@@ -21,6 +21,5 @@ const data = [
 ];
 
 const app = document.getElementById("app");
-
 app.appendChild(ToDoJS(data));
 app.appendChild(ToDoTS(data));

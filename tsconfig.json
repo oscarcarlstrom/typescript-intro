@@ -1,11 +1,8 @@
 {
   "compilerOptions": {
-    "module": "system",
-    "noImplicitAny": true,
-    "removeComments": true,
-    "preserveConstEnums": true,
-    "sourceMap": true
+    "noEmit": true, //We are using babel to handle transpiling
+    "noImplicitAny": true //Throws an error whenever TS detects an implicit 'any' type
   },
-  "include": ["src/ts/**/*"],
-  "exclude": ["node_modules", "**/*.spec.ts"]
+  "include": ["src/ts"], //Which files to check
+  "exclude": ["node_modules"] //What to exclude
 }
