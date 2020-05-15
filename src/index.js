@@ -1,6 +1,6 @@
 import "./index.css";
-import ToDoJS from "./js/toDo";
-import ToDoTS from "./ts/toDo";
+import ToDoJS from "./js-components/toDo";
+import ToDoTS from "./ts-components/toDo";
 
 const randomDate = () =>
   new Date(+new Date() - Math.floor(Math.random() * 10000000000));
