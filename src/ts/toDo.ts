@@ -6,6 +6,7 @@ import { ListItem } from "./item";
 export default (initialList?: ListItem[]) => {
   const toDo = document.createElement("div");
   toDo.setAttribute("id", "ts-todo");
+
   const heading = Heading("To do");
   toDo.appendChild(heading);
 

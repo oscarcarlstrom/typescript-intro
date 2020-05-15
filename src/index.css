@@ -11,12 +11,12 @@ h1 {
   font-weight: 100;
 }
 
-#app {
+#todo-widgets {
   display: flex;
   justify-content: space-between;
 }
 
-#app > div {
+#todo-widgets > div {
   width: 40%;
   padding: 0px 15px 25px;
 }

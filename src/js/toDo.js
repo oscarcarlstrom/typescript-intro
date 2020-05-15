@@ -5,6 +5,7 @@ import NewItem from "./newItem";
 export default (initialList) => {
   const toDo = document.createElement("div");
   toDo.setAttribute("id", "js-todo");
+
   const heading = Heading("To do");
   toDo.appendChild(heading);
 

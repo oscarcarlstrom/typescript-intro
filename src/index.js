@@ -20,6 +20,6 @@ const data = [
   },
 ];
 
-const app = document.getElementById("app");
-app.appendChild(ToDoJS(data));
-app.appendChild(ToDoTS(data));
+const widgets = document.getElementById("todo-widgets");
+widgets.appendChild(ToDoJS(data));
+widgets.appendChild(ToDoTS(data));
