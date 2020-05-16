@@ -1,9 +1,9 @@
 import Heading from "./heading";
 import List from "./list";
 import NewItem from "./newItem";
-import { ListItem } from "./item";
+import { Item } from "./listItem";
 
-export default (initialList?: ListItem[]) => {
+export default (initialList?: Item[]) => {
   const toDo = document.createElement("div");
   toDo.setAttribute("id", "ts-todo");
 

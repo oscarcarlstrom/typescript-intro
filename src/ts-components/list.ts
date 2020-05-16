@@ -1,9 +1,9 @@
-import Item, { ListItem } from "./item";
+import ListItem, { Item } from "./listItem";
 
-export default (items: ListItem[] = []) => {
+export default (items: Item[] = []) => {
   const ul = document.createElement("ul");
   items.forEach((values) => {
-    const item = Item(values);
+    const item = ListItem(values);
     ul.appendChild(item);
   });
   return ul;

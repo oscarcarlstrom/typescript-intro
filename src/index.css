@@ -65,7 +65,7 @@ form {
 
 form button::after {
   content: "\FF0B";
-  font-size: 300%;
+  font-size: 2rem;
 }
 
 input,
@@ -109,9 +109,9 @@ li {
 li > button {
   margin-right: 20px;
   flex-shrink: 0;
+  font-size: 1.5rem;
 }
 
 li button::after {
   content: "\2713";
-  font-size: 200%;
 }

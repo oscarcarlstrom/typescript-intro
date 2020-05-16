@@ -1,4 +1,4 @@
-import item from "./item";
+import ListItem from "./listItem";
 import Input from "./newItemInput";
 import NewItemButton from "./newItemButton";
 
@@ -13,7 +13,7 @@ export default (ul: HTMLUListElement) => {
 
   const addItem = () => {
     if (input.value.length === 0) return;
-    const li = item({ value: input.value, createdAt: new Date() });
+    const li = ListItem({ value: input.value, createdAt: new Date() });
     input.value = null;
     ul.appendChild(li);
   };
