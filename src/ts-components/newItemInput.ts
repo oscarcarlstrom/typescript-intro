@@ -1,7 +1,7 @@
-export default () => {
+export default (ariaLabel: string, placeholder?: string) => {
   const input = document.createElement("input");
   input.setAttribute("type", "text");
-  input.setAttribute("placeholder", "Enter your next todo...");
-  input.setAttribute("aria-label", "New todo");
+  input.setAttribute("aria-label", ariaLabel);
+  input.setAttribute("placeholder", placeholder);
   return input;
 };

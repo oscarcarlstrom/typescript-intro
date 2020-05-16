@@ -1,6 +1,6 @@
-export default (addItem: () => void) => {
+export default (addItem: () => void, ariaLabel: string) => {
   const button = document.createElement("button");
-  button.setAttribute("aria-label", "Add");
   button.addEventListener("click", addItem);
+  button.setAttribute("aria-label", ariaLabel);
   return button;
 };

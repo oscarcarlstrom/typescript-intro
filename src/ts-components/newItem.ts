@@ -8,7 +8,7 @@ export default (ul: HTMLUListElement) => {
     event.preventDefault();
   });
 
-  const input = Input();
+  const input = Input("New todo", "Enter your next todo...");
   form.appendChild(input);
 
   const addItem = () => {
@@ -17,7 +17,7 @@ export default (ul: HTMLUListElement) => {
     input.value = null;
     ul.appendChild(li);
   };
-  const button = NewItemButton(addItem);
+  const button = NewItemButton(addItem, "Add");
 
   form.appendChild(button);
 
