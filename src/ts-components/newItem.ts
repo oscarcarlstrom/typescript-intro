@@ -1,6 +1,6 @@
 import ListItem from "./listItem";
 import Input from "./newItemInput";
-import NewItemButton from "./newItemButton";
+import Button from "./button";
 
 export default (ul: HTMLUListElement) => {
   const form = document.createElement("form");
@@ -17,7 +17,7 @@ export default (ul: HTMLUListElement) => {
     input.value = null;
     ul.appendChild(li);
   };
-  const button = NewItemButton(addItem, "Add");
+  const button = Button(addItem, "Add");
 
   form.appendChild(button);
 
