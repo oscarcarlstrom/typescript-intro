@@ -104,6 +104,7 @@ li {
   align-items: center;
   margin-top: 20px;
   word-break: break-all;
+  position: relative;
 }
 
 li > button {
@@ -114,4 +115,27 @@ li > button {
 
 li button::after {
   content: "\2713";
+}
+
+li:not(:hover) .tooltip {
+  visibility: hidden;
+}
+
+#js-todo .tooltip {
+  background-color: #f0d920;
+}
+
+#ts-todo .tooltip {
+  background-color: #0377c7;
+  color: white;
+}
+
+.tooltip {
+  position: absolute;
+  z-index: 1;
+  right: -5px;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  font-weight: 700;
 }
