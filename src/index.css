@@ -133,10 +133,10 @@ li:not(:hover) .tooltip {
 .tooltip {
   position: absolute;
   z-index: 1;
-  right: -15px;
+  right: -20px;
   text-align: center;
   border-radius: 6px;
-  padding: 5px;
+  padding: 7px;
   font-weight: 700;
   box-shadow: 0px 2px 11px 1px #7a7a7a;
 }
