@@ -1,7 +1,7 @@
+import { Item } from "./listItem";
 import Heading from "./heading";
 import List from "./list";
 import NewItem from "./newItem";
-import { Item } from "./listItem";
 
 export default (initialList?: Item[]) => {
   const toDo = document.createElement("div");
