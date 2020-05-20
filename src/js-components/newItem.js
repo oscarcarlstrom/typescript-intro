@@ -14,6 +14,9 @@ export default (ul) => {
   const addItem = () => {
     if (input.value.length === 0) return;
     const li = ListItem({ value: input.value, createdAt: new Date() });
+    //JS - np!
+    // const li2 = ListItem({ value: input.value });
+
     input.value = null;
     ul.appendChild(li);
   };

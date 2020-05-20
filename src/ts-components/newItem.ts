@@ -14,6 +14,10 @@ export default (ul: HTMLUListElement) => {
   const addItem = () => {
     if (input.value.length === 0) return;
     const li = ListItem({ value: input.value, createdAt: new Date() });
+    //Argument of type '{ value: string; }' is not assignable to parameter of type 'Item'.
+    //Property 'createdAt' is missing in type '{ value: string; }' but required in type 'Item'
+    // const li2 = ListItem({ value: input.value });
+
     input.value = null;
     ul.appendChild(li);
   };
