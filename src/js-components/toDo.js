@@ -1,6 +1,6 @@
 import Heading from "./heading";
 import List from "./list";
-import NewItem from "./newItem";
+import NewItemForm from "./newItem";
 
 export default (initialList) => {
   const toDo = document.createElement("div");
@@ -10,8 +10,8 @@ export default (initialList) => {
   toDo.appendChild(heading);
 
   const ul = List(initialList);
-  const newItem = NewItem(ul);
-  toDo.appendChild(newItem);
+  const newItemForm = NewItemForm(ul);
+  toDo.appendChild(newItemForm);
   toDo.appendChild(ul);
 
   return toDo;
